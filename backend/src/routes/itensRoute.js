@@ -1,8 +1,9 @@
 var express = require('express')
 var router = express.Router()
-var controller = require('../controllers/itensController')
+var ItensController = require('../controllers/itensController')
 
-router.get('/', controller.get)
-router.get('/:id', controller.getById)
+router.get('/', ItensController.get)
+router.get('/:id', ItensController.getById)
+router.post('/', ItensController.post)
 
 module.exports = router

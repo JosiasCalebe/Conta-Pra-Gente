@@ -1,7 +1,6 @@
 const jwt = require("jsonwebtoken");
 const express = require('express')
 const app = express()
-const PORT = process.env.PORT || 5000;
 
 //Rotas
 const index = require('./routes/index')
@@ -13,7 +12,16 @@ const users = require("./model/Usuario.js");
 // mongodb
 var mongoose = require("mongoose");
 // mongoose.connect("mongodb://admin:admin132@ds329058.mlab.com:29058/contapragente");
-mongoose.connect("mongodb://127.0.0.1:27017/contapragente");
+// mongoose.connect("mongodb://127.0.0.1:27017/contapragente");
+
+mongoose.connect('mongodb://127.0.0.1:27017/contapragente', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+});
+// mongoose.connect('mongodb://admin:admin132@ds329058.mlab.com:29058/contapragente', {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+// });
 
 // verificar se foi conectado mesmo
 var db = mongoose.connection;
@@ -67,7 +75,5 @@ app.post("/api/login", (req, res) => {
 	  }
 	);
   }
-  
-app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}...`));
 
 module.exports = app
