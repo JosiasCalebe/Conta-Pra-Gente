@@ -25,13 +25,6 @@ exports.getById = (req, res) => {
 	// 	  }
 	// 	});
 	
-		let id = req.params.id
-		// itens.findById(id, function (err, response) {
-		// 	if (err) {
-		// 		return res.status(404).send({'mensagem' : "Erro." + err});
-		// 	}
-        //     return res.status(200).send(response);
-		//   })
 		  itens
             .findById(req.params.id)
             .exec(function(err, item) {
@@ -39,7 +32,6 @@ exports.getById = (req, res) => {
                 if (item) return res.status(200).json(item);
                 return res.status(404).json({"mensagem":"item não encontrado."});
             });
-		// res.status(200).send(itens.findById(id))
 }
 
 exports.post = async (req, res) => {
@@ -51,7 +43,7 @@ exports.post = async (req, res) => {
 		return res.status(401).send();
 	}
 
-	jwt.verify(token, "chave", function(error, decoded) {
+	jwt.verify(token, process.env.SECRET, function(error, decoded) {
 		if (error) {
 			return res.status(401).send({ "mensagem" : "Token Inválido." });
 		}
