@@ -19,7 +19,7 @@ exports.postLogin = async (req, res) => {
         }
     
         token = jwt.sign({ id }, process.env.SECRET, {
-          expiresIn: 300
+          expiresIn: 30000000000000
         });
     
         res.send({ auth: true, token });
