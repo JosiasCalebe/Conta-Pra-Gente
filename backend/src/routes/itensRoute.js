@@ -1,9 +1,9 @@
 var express = require('express')
 var router = express.Router()
 var ItensController = require('../controllers/itensController')
-var VerifyToken = require('../utils/utils');
+var VerificaToken = require('../utils/tokenUtils');
 
-router.get('/', VerifyToken, ItensController.get)
+router.get('/', VerificaToken, ItensController.get)
 router.get('/:id', ItensController.getById)
 router.post('/', ItensController.post)
 
