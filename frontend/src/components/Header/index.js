@@ -16,7 +16,7 @@ class Header extends Component {
     render() {
         return (
             <nav className="navBar">
-                <div className="logo">Conta Pra Gente</div>
+                <div className="logo"><Link className="logo" to="/">Conta Pra Gente</Link></div>
 
                 <div className={ this.state.active ? "burger open" : "burger" } onClick={() => this.setState({active: !this.state.active})}>
                     <div className="line1"></div>
@@ -27,16 +27,16 @@ class Header extends Component {
                 <div className={ this.state.active ? "centerNavItens nav-active" : "centerNavItens" }>
                     <ul>
                         <li className="pages">
-                            <Link className="a" to="/chat"> Chat </Link>
+                            <a className="a" href="/#chat"> Chat </a>
                         </li>
                         <li className="pages">
-                            <Link className="a" to="/mural"> Mural </Link>
+                            <a className="a" href="/mural"> Mural </a>
                         </li>
                         <li className="pages">
-                            <Link className="a" to="/videos"> Vídeos </Link>
+                            <a className="a" href="/videos"> Vídeos </a>
                         </li>
                         <li>
-                            <Link className="a" to="/login"> Login </Link>
+                            <a className="a" href="/login"> Login </a>
                         </li>
                     </ul>
                 </div>

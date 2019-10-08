@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-export default function SVG(){
+export default function SVG(props){
     return(
-        <svg id="ec16f1a7-6162-4648-9d10-380c89c40baf" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="470" height="320" viewBox="0 0 1144 774.71136">
+        <svg id="ec16f1a7-6162-4648-9d10-380c89c40baf" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width={props.width} height={props.height} viewBox="0 0 1144 774.71136">
           <defs>
             <linearGradient id="acac56ab-bcae-42fb-a182-d934e873c548" x1="158.36228" y1="837.35568" x2="158.36228" y2="581.61856" gradientUnits="userSpaceOnUse">
               <stop offset="0" stop-color="gray" stop-opacity="0.25" />

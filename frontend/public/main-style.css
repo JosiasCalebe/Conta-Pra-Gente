@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 
 :root {
-  --main-color: #FFADBB;
+  --main-color: salmon;
 }
 
 * {
@@ -9,6 +9,7 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
