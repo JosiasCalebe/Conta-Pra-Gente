@@ -5,20 +5,10 @@ section {
     min-height: 80vh;
 }
 
-h2 {
-    color: var(--main-color);
-    font-size: 45px;
-    line-height: 20px;
-    margin-bottom: 15px;
-}
-
 .btn {
+    text-decoration: none;
     padding: 10px 20px;
     background: var(--main-color);
-    color: #FFF;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
     border-radius: 20px;
     border: none;
     margin-top: 15px;
@@ -27,12 +17,20 @@ h2 {
     transition: all .5s
 }
 
+.btn .a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .btn:hover {
     opacity: 1;
 }
 
 .cont {
-    min-width: 50%;
+    min-width: 40%;
 }
 
 .pCont {
@@ -48,7 +46,7 @@ h2 {
 .sec1{
     width: 100%;
     margin-bottom: 20vh; 
-    padding: 0 45px
+    padding: 0 60px
 }
 
 .boxContent {
@@ -60,7 +58,8 @@ h2 {
 }
 
 .slogan,
-.subSlogan {
+.subSlogan,
+.chatbtn {
     margin-right: auto;
 }
 
@@ -79,6 +78,56 @@ h2 {
     word-break: normal;
 }
 
+.chatbtn {
+    margin-top: 20px; 
+}
+
+.chatbtn .a {
+    position: relative;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 0 6px;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.chatbtn .a:hover {
+    color: var(--main-color);
+    transform-origin: right;
+}
+
+.chatbtn .a::after,
+.chatbtn .a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 4px;
+    transform: scaleX(0);
+    transition: all 0.3s;
+    border-radius: 4px;
+    bottom: 0;
+    transform-origin: right;
+}
+
+.chatbtn .a::after {
+    transition-delay: .3s;
+    background-color: var(--main-color);
+}
+
+.chatbtn .a:hover::after {
+    transform: scaleX(1);
+}
+
+.chatbtn .a::before {
+    background-color: #444;
+}
+
+.chatbtn .a:hover::before {
+    transform: scaleX(1);
+}
+
 .imageBox {
     margin: 0 0 0 auto;
 }
@@ -87,13 +136,13 @@ h2 {
 
 .sec2,
 .sec4 {
-    padding: 0 45px;
+    padding: 0 60px;
     height: 100vh;
 }
 
 /* ====== */
 .sec3 {
-    padding: 0 45px;
+    padding: 0 60px;
     height: 100vh;
     justify-content: flex-end;
 }
@@ -116,6 +165,90 @@ h2 {
 }
 
 /* ======= */
+.mural {
+    width: 80%;
+}
+
+.muralCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+@import 'https://fonts.googleapis.com/css?family=Reenie+Beanie';
+
+.postit {
+ line-height: 1;
+ text-align:center;     
+ width: 275px;    
+ margin: 25px;    
+ min-height:250px;
+ max-height:250px;
+ padding-top:10px;
+ position:relative;   
+ border:1px solid #E8E8E8; 
+ border-bottom-right-radius: 60px 5px;
+ display:flex;
+ justify-content: center;
+ align-items: center;    
+  background: #FFE052; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #FFE052 81%, #FFE052 82%, #FFE052 82%, #ffffc6 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#FFE052), color-stop(82%,#FFE052), color-stop(82%,#FFE052), color-stop(100%,#ffffc6)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg, #FFE052 81%,#FFE052 82%,#FFE052 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg, #FFE052 81%,#FFE052 82%,#FFE052 82%,#ffffc6 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg, #FFE052 81%,#FFE052 82%,#FFE052 82%,#ffffc6 100%); /* IE10+ */
+background: linear-gradient(135deg, #FFE052 81%,#FFE052 82%,#FFE052 82%,#ffffc6 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE052', endColorstr='#ffffc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.postit:after {     
+  content: "";
+ position:absolute;
+ z-index:-1;
+ right:-0px; bottom:20px;
+ width:200px;
+ height: 25px;
+ background: rgba(0, 0, 0, 0.2);
+ box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
+-moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+-webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+     -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+        transform: matrix(-1, -0.1, 0, 1, 0, 0);
+        
+}
+
+.rotate {
+           /* Safari */
+           -webkit-transform: rotate(-10deg);
+           /* Firefox */
+           -moz-transform: rotate(-10deg);
+           /* IE */
+           -ms-transform: rotate(-10deg);
+           /* Opera */
+           -o-transform: rotate(-10deg);
+           /* Internet Explorer */
+           filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=1);
+       }
+
+.postit p {
+    font-family:'Reenie Beanie';    
+    font-size:3.5em; 
+    margin: auto 0;
+    font-weight: bold;
+}
+
+.phrase {
+    word-break: normal;
+    height: 100%;
+    width: 50%;
+    font-family:'Reenie Beanie'; 
+    font-size: 2.1rem;
+}
+
+/* ======= */
 .video {
     width: 50%;
     display: flex;
@@ -124,7 +257,7 @@ h2 {
 }
 
 .video img{
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
 }
 

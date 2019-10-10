@@ -11,7 +11,7 @@ class Header extends Component {
         this.state = {
             active : false,
         };
-    }
+    };
 
     render() {
         return (
@@ -30,10 +30,10 @@ class Header extends Component {
                             <a className="a" href="/#chat"> Chat </a>
                         </li>
                         <li className="pages">
-                            <a className="a" href="/mural"> Mural </a>
+                            <a className="a" href="/#mural"> Mural </a>
                         </li>
                         <li className="pages">
-                            <a className="a" href="/videos"> Vídeos </a>
+                            <a className="a" href="/#videos"> Vídeos </a>
                         </li>
                         <li>
                             <a className="a" href="/login"> Login </a>
