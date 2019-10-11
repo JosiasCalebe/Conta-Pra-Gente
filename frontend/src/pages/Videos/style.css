@@ -1,0 +1,56 @@
+.secVid {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.vidCont {
+    padding: 0 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vidCont .vidSec {
+    margin: 50px 0 0 0; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vidCont .vidSec .vidFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.vidCont .vidSec .vidFrame iframe {
+    width: 550px;
+    height: 315px;
+}
+
+.vidCont .vidSec .vidDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vidCont .vidSec .vidDesc h4 {
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 40px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.vidCont .vidSec .vidDesc p {
+    font-weight: bold;
+    font-size: 20px;
+    color: #999;
+    text-align: center;
+}
