@@ -34,7 +34,7 @@ class Header extends Component {
                     <div className="line3"></div>
                 </div>
 
-                <div className={ this.state.active ? "centerNavItens nav-active" : "centerNavItens" } style={{position: this.state.active ? "fixed" : ""}}>
+                <div className={ this.state.active ? "centerNavItens nav-active" : "centerNavItens" }>
                     <ul>
                         <li className="pages">
                             <a className="a" href="/#chat" onClick={() => this.scroll()}> Chat </a>
