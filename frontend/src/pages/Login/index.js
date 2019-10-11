@@ -8,7 +8,7 @@ import './style.css';
 export default function App() {
     return (
         <div className="container">
-            <section>
+            <section className="secLogin">
                 <h2>Login</h2>
                 <div className="login">
                     <form >
@@ -16,7 +16,7 @@ export default function App() {
                         <input className="txt" type="text"/>
                         <label htmlFor="">Sua Senha</label>
                         <input className="txt" type="text"/>
-                        <button>Fazer Login</button>
+                        <button>Logar</button>
                         <div className="utils">
                             <a href="#">Esqueceu a Senha?</a>
                         </div>

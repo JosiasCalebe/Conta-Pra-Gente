@@ -104,7 +104,7 @@ section {
     width: 100%;
     left: 0;
     height: 4px;
-    transform: scaleX(0);
+    transform: scaleX();
     transition: all 0.3s;
     border-radius: 4px;
     bottom: 0;
