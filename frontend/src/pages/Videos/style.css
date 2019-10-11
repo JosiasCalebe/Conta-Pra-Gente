@@ -45,7 +45,7 @@
     color: var(--main-color);
     font-size: 40px;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .vidCont .vidSec .vidDesc p {
@@ -53,4 +53,62 @@
     font-size: 20px;
     color: #999;
     text-align: center;
+}
+
+@media screen and (max-width: 1040px) {
+    .vidCont .vidSec {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .vidCont .vidSec .vidFrame {
+        margin: 0;
+    }
+
+    .vidCont .vidSec .vidDesc {
+        width: 80%;
+        margin-bottom: 60px;
+    }
+
+    .vidCont .vidSec .vidDesc h4 {
+        font-size: 35px;
+    }
+
+    .vidCont .vidSec .vidDesc p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .vidCont .vidSec .vidDesc {
+        width: 90%;
+        margin-bottom: 45px;
+    }
+
+    .vidCont .vidSec .vidFrame iframe {
+        width: 500px;
+        height: 265px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .vidCont .vidSec .vidDesc h4 {
+        font-size: 30px;
+    }
+
+    .vidCont .vidSec .vidDesc p {
+        font-size: 16px;
+    }
+
+    .vidCont .vidSec .vidFrame iframe {
+        width: 400px;
+        height: 210px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .vidCont .vidSec .vidFrame iframe {
+        width: 350px;
+        height: 180px;
+    } 
 }
