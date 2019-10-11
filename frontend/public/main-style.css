@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 
 :root {
-  --main-color: #FFADBB;
+  --main-color: salmon;
 }
 
 * {
@@ -16,6 +16,10 @@ html,
 body,
 #root {
   min-height: 100%;
+}
+
+#root {
+  overflow-x:hidden; 
 }
 
 body,

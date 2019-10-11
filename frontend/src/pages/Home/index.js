@@ -6,6 +6,9 @@ import Header from '../../components/Header/index';
 // ChatModal
 import Chat from '../../components/ChatModal/index';
 
+// Footer
+import Footer from '../../components/Footer/index';
+
 // Imagens
 import SecImage from '../../components/SVG/svgHome';
 import YouTubeLogo from '../../components/SVG/youtube.png';
@@ -76,6 +79,7 @@ export default function App() {
           <img src={YouTubeLogo} alt="Logo do Youtube" />
         </div>
       </section>
+      <Footer />
     </div >
   );
 }

@@ -174,3 +174,16 @@
     color: #FFF;
     margin-left: auto;
 }
+
+@media screen and (max-width: 1120px) {
+    .chatCont {
+        margin: 0 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .chatCont {
+        width: 100%;
+        min-width: 350px;
+    }
+}
