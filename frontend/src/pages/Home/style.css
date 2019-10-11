@@ -291,16 +291,8 @@ section {
         margin: 20vh 0;
     }
 
-    .sec3 .mural .muralCont {
+     .mural .muralCont {
         width: 100%;
-    }
-
-    .sec3 .mural .muralCont:last-child {
-        flex-flow: row-reverse;
-    }
-
-    .sec3 .mural .muralCont:last-child .phrase {
-        text-align: right;
     }
 
     .sec3 .cont {
@@ -325,21 +317,21 @@ section {
 }
 
 @media screen and (max-width: 900px) {
-    .sec3 .mural .muralCont {
+     .mural .muralCont {
         flex-direction: column;
         text-align: center;
     }
 
-    .sec3 .mural .muralCont .phrase {
+     .mural .muralCont .phrase {
         width: 100%;
     }
 
-    .sec3 .mural .muralCont:last-child {
+     .mural .muralCont:last-child {
         margin-top: 40px;
         flex-flow: column;
     }
 
-    .sec3 .mural .muralCont:last-child .phrase {
+     .mural .muralCont:last-child .phrase {
         text-align: center;
     }
 }
