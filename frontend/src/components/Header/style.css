@@ -164,4 +164,8 @@ nav {
   .centerNavItens.nav-active {
     transform: translateX(0%);
   }
+
+  .centerNavItens.nav-active .burguer {
+    position: fixed;
+  }
 }
