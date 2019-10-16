@@ -13,8 +13,6 @@ h2 {
 .login {
     width: 420px;
     height: 350px;
-    border: #707070 3px solid;
-    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,12 +49,25 @@ h2 {
     color: #707070
 }
 
+.login form .password {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form .txt.pwd {
+    width: 90%;
+    margin-right: auto;
+}
+
 .login form .txt:focus {
     border-bottom: var(--main-color) 2px solid;
 }
 
 .login form button {
     width: 100%;
+    margin-top: 15px;
     padding: 18px;
     border: none;
     background: var(--main-color);
@@ -99,4 +110,10 @@ h2 {
 
 .login form .utils :hover::after {
     transform: scaleX(1);
+}
+
+.login form img {
+    width: 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }

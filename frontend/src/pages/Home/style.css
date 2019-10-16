@@ -46,7 +46,7 @@ section {
 .sec1{
     width: 100%;
     margin-bottom: 20vh; 
-    padding: 0 60px
+    padding: 0 40px
 }
 
 .boxContent {
@@ -185,6 +185,9 @@ section {
     .chatbtn .a {
         font-size: 30px;
     }
+    .pCont {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -203,6 +206,10 @@ section {
 
     .chatbtn .a {
         font-size: 26px;
+    }
+
+    .pCont {
+        font-size: 22px;
     }
 }
 
@@ -223,7 +230,15 @@ section {
 
 @media screen and (max-width: 480px) {
     .slogan {
-        font-size: 38px;
+        font-size: 35px;
+    }
+    .subSlogan {
+        width: 100%;
+        font-size: 23px;
+    }
+
+    .chatbtn .a {
+        font-size: 22px;
     }
 }
 
@@ -231,7 +246,7 @@ section {
 
 .sec2,
 .sec4 {
-    padding: 0 60px;
+    padding: 0 40px;
     height: 100vh;
 }
 
@@ -259,7 +274,7 @@ section {
 
 /* ====== */
 .sec3 {
-    padding: 0 60px;
+    padding: 0 40px;
     height: 100vh;
     justify-content: flex-end;
 }
@@ -291,16 +306,8 @@ section {
         margin: 20vh 0;
     }
 
-    .sec3 .mural .muralCont {
+     .mural .muralCont {
         width: 100%;
-    }
-
-    .sec3 .mural .muralCont:last-child {
-        flex-flow: row-reverse;
-    }
-
-    .sec3 .mural .muralCont:last-child .phrase {
-        text-align: right;
     }
 
     .sec3 .cont {
@@ -325,21 +332,21 @@ section {
 }
 
 @media screen and (max-width: 900px) {
-    .sec3 .mural .muralCont {
+     .mural .muralCont {
         flex-direction: column;
         text-align: center;
     }
 
-    .sec3 .mural .muralCont .phrase {
+     .mural .muralCont .phrase {
         width: 100%;
     }
 
-    .sec3 .mural .muralCont:last-child {
+     .mural .muralCont:last-child {
         margin-top: 40px;
         flex-flow: column;
     }
 
-    .sec3 .mural .muralCont:last-child .phrase {
+     .mural .muralCont:last-child .phrase {
         text-align: center;
     }
 }
