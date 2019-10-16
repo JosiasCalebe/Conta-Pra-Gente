@@ -32,7 +32,7 @@ export default function App() {
         <div className="boxContent">
           <div className="slogan">De jovem pra jovem <br /> <span>Conta Pra Gente</span></div>
           <div className="subSlogan">A plataforma que junta jovens para conversar e se ajudarem</div>
-          <div className="chatbtn"><Link className="a" to="/chat">Entre no Chat</Link></div>
+          <div className="chatbtn"><a className="a" href="http://www.robonaticos111.wixsite.com/conta-pra-gente">Entre no Chat</a></div>
         </div>
         <div className="imageBox">
           <SecImage width={styleSVG.width} height={styleSVG.height} />
@@ -44,7 +44,7 @@ export default function App() {
           <div className="pCont">
             O Chat junta jovens para conversarem e se ajudarem
           </div>
-          <button className="btn"><Link className="a" to="/chat">Entre no Chat</Link></button>
+          <button className="btn"><a className="a" href="http://www.robonaticos111.wixsite.com/conta-pra-gente">Entre no Chat</a></button>
         </div>
         <Chat />
       </section>
@@ -64,7 +64,7 @@ export default function App() {
           <div className="pCont">
             O Mural tem depoimentos e frases motivacionais
           </div>
-          <button className="btn"><Link className="a" to="/mural">Acesse o Mural</Link></button>
+          <button className="btn"><a className="a" href="http://www.robonaticos111.wixsite.com/conta-pra-gente">Acesse o Mural</a></button>
         </div>
       </section>
       <section id="videos" className="sec4">
@@ -73,7 +73,7 @@ export default function App() {
           <div className="pCont">
             Os Vídeos falaram sobre assuntos cotidianos
           </div>
-          <button className="btn"><Link className="a" to="/videos">Veja os Vídeos</Link></button>
+          <button className="btn"><a className="a" href="http://www.robonaticos111.wixsite.com/conta-pra-gente">Veja os Vídeos</a></button>
         </div>
         <div className="video">
           <img src={YouTubeLogo} alt="Logo do Youtube" />

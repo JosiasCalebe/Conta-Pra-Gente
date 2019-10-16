@@ -25,13 +25,12 @@ class Login extends React.Component {
                     <h2>Login</h2>
                     <div className="login">
                         <form >
-                            <label htmlFor="">Seu RM (Registro de Matrícula)</label>
+                            <label htmlFor="">Seu email constitucional</label>
                             <input className="txt" type="text" />
                             <label htmlFor="">Sua Senha</label>
                             <div className="password">
                                 <input className="txt pwd" type={this.state.active ? "text" : "password"} />
-                                <img src={View} onClick={() => this.setState({ active: !this.state.active })} style={{ display: this.state.active ? "none" : "" }} />
-                                <img src={Hide} onClick={() => this.setState({ active: !this.state.active })} style={{ display: !this.state.active ? "none" : "" }} />
+                                <img src={this.state.active ? Hide : View} onClick={() => this.setState({ active: !this.state.active })}/>
                             </div>
                             <button>Logar</button>
                             <div className="utils">
