@@ -13,40 +13,32 @@ class Header extends Component {
         this.state = {
             active : false,
         };
-    };
-
-    componentDidMount() {
-        this.element = window;
-    }
-
-    scroll = () => {
-        this.state.active ? enableBodyScroll(this.element) : disableBodyScroll(this.element);
-      };    
+    }; 
 
     render() {
         return (
             <nav className="navBar">
                 <div className="logo"><Link className="logo" to="/">Conta Pra Gente</Link></div>
 
-                <div className={ this.state.active ? "burger open" : "burger" } onClick={() => {this.setState({active: !this.state.active}); this.scroll();}}>
+                <div className={ this.state.active ? "burger open" : "burger" } onClick={() => this.setState({active: !this.state.active})}>
                     <div className="line1"></div>
                     <div className="line2"></div>
                     <div className="line3"></div>
                 </div>
 
-                <div className={ this.state.active ? "centerNavItens nav-active" : "centerNavItens" } style={{position: this.state.active ? "fixed" : ""}}>
+                <div className={ this.state.active ? "centerNavItens nav-active" : "centerNavItens" }>
                     <ul>
                         <li className="pages">
-                            <a className="a" href="/#chat" onClick={() => {this.setState({active: !this.state.active}); this.scroll();}}> Chat </a>
+                            <a className="a" href="/#chat" onClick={() => this.setState({active: !this.state.active})}> Chat </a>
                         </li>
                         <li className="pages">
-                            <a className="a" href="/#mural" onClick={() => {this.setState({active: !this.state.active}); this.scroll();}}> Mural </a>
+                            <a className="a" href="/#mural" onClick={() => this.setState({active: !this.state.active})}> Mural </a>
                         </li>
                         <li className="pages">
-                            <a className="a" href="/#videos" onClick={() => {this.setState({active: !this.state.active}); this.scroll();}}> Vídeos </a>
+                            <a className="a" href="/#videos" onClick={() => this.setState({active: !this.state.active})}> Vídeos </a>
                         </li>
                         <li>
-                            <a className="a" href="/login" onClick={() => {this.setState({active: !this.state.active}); this.scroll();}}> Login </a>
+                            <a className="a" href="/login" onClick={() => this.setState({active: !this.state.active})}> Login </a>
                         </li>
                     </ul>
                 </div>
