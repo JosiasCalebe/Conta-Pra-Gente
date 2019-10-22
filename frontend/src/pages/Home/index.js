@@ -13,7 +13,7 @@ import Footer from '../../components/Footer/index';
 import SecImage from '../../components/SVG/svgHome';
 import YouTubeLogo from '../../components/SVG/youtube.png';
 
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 import './style.css'
@@ -29,12 +29,18 @@ export default function App() {
     <div id="home" className="container">
       <Header />
       <section className="sec1">
-        <div className="boxContent">
-          <div className="slogan">De jovem pra jovem <br /> <span>Conta Pra Gente</span></div>
-          <div className="subSlogan">A plataforma que junta jovens para conversar e se ajudarem</div>
+        <div className="main">
+          <div className="boxContent">
+            <div className="slogan">De jovem pra jovem <br /> <span>Conta Pra Gente</span></div>
+            <div className="subSlogan">A plataforma que junta jovens para conversar e se ajudarem</div>
+          </div>
+          <div className="imageBox">
+            <SecImage width={styleSVG.width} height={styleSVG.height} />
+          </div>
         </div>
-        <div className="imageBox">
-          <SecImage width={styleSVG.width} height={styleSVG.height} />
+        <div class="box">
+          <span></span>
+          <span></span>
         </div>
       </section>
       {/* <section className="sec2" id="chat">
@@ -67,7 +73,7 @@ export default function App() {
         </div>
       </section>
       <section id="videos" className="sec4">
-        <div className="cont">                                                             
+        <div className="cont">
           <h2>Vídeos</h2>
           <div className="pCont">
             Os Vídeos falaram sobre assuntos cotidianos
