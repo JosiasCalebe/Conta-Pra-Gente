@@ -37,7 +37,7 @@ export default function App() {
           <SecImage width={styleSVG.width} height={styleSVG.height} />
         </div>
       </section>
-      <section className="sec2" id="chat">
+      {/* <section className="sec2" id="chat">
         <div className="cont">
           <h2>Chat</h2>
           <div className="pCont">
@@ -46,7 +46,7 @@ export default function App() {
           <button className="btn"><a className="a" href="http://www.robonaticos111.wixsite.com/conta-pra-gente">Entre no Chat</a></button>
         </div>
         <Chat />
-      </section>
+      </section> */}
       <section id="mural" className="sec3">
         <div className="mural">
           <div className="muralCont">
