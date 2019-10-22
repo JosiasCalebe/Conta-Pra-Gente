@@ -82,56 +82,6 @@ section {
     word-break: normal;
 }
 
-.chatbtn {
-    margin-top: 20px;
-}
-
-.chatbtn .a {
-    position: relative;
-    font-weight: bold;
-    font-size: 40px;
-    padding: 0 6px 0 0;
-    color: #444;
-    text-decoration: none;
-    transition: all .3s;
-}
-
-.chatbtn .a:hover {
-    color: var(--main-color);
-    transform-origin: right;
-}
-
-.chatbtn .a::after,
-.chatbtn .a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    left: 0;
-    height: 4px;
-    transform: scaleX(0);
-    transition: all 0.3s;
-    border-radius: 4px;
-    bottom: 0;
-    transform-origin: left;
-}
-
-.chatbtn .a::after {
-    transition-delay: .3s;
-    background-color: var(--main-color);
-}
-
-.chatbtn .a:hover::after {
-    transform: scaleX(1);
-}
-
-.chatbtn .a::before {
-    background-color: #444;
-}
-
-.chatbtn .a:hover::before {
-    transform: scaleX(1);
-}
-
 .imageBox {
     margin: 0 0 0 auto;
 }
@@ -177,14 +127,6 @@ section {
         text-align: center;
         font-size: 32px;
     }
-
-    .chatbtn {
-        margin: 15px 0 0 0;
-    }
-
-    .chatbtn .a {
-        font-size: 30px;
-    }
     .pCont {
         width: 100%;
     }
@@ -203,11 +145,6 @@ section {
     .subSlogan {
         font-size: 28px;
     }
-
-    .chatbtn .a {
-        font-size: 26px;
-    }
-
     .pCont {
         font-size: 22px;
     }
@@ -222,10 +159,6 @@ section {
         width: 100%;
         font-size: 26px;
     }
-
-    .chatbtn .a {
-        font-size: 25px;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -235,10 +168,6 @@ section {
     .subSlogan {
         width: 100%;
         font-size: 23px;
-    }
-
-    .chatbtn .a {
-        font-size: 22px;
     }
 }
 

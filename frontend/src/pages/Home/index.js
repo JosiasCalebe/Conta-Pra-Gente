@@ -32,7 +32,6 @@ export default function App() {
         <div className="boxContent">
           <div className="slogan">De jovem pra jovem <br /> <span>Conta Pra Gente</span></div>
           <div className="subSlogan">A plataforma que junta jovens para conversar e se ajudarem</div>
-          <div className="chatbtn"><a className="a" href="http://www.robonaticos111.wixsite.com/conta-pra-gente">Entre no Chat</a></div>
         </div>
         <div className="imageBox">
           <SecImage width={styleSVG.width} height={styleSVG.height} />
@@ -68,7 +67,7 @@ export default function App() {
         </div>
       </section>
       <section id="videos" className="sec4">
-        <div className="cont">
+        <div className="cont">                                                             
           <h2>Vídeos</h2>
           <div className="pCont">
             Os Vídeos falaram sobre assuntos cotidianos
