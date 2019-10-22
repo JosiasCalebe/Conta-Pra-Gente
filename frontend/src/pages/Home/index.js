@@ -39,10 +39,16 @@ export default function App() {
           </div>
         </div>
         <div class="box">
-          <a href="#mural">
+          <a href="/#mural">
             <span></span>
             <span></span>
           </a>
+        </div>
+      </section>
+      <section id="about" className="secAbt">
+        <h1>O que é o Conta Pra Gente?</h1>
+        <div className="abtBox">
+          <h4>Somos uma plataforma que tem como objetivo levar conforto àqueles que estão em conflito, seja com  os outros ou consigo mesmo<span className="abtDot">.</span></h4>
         </div>
       </section>
       {/* <section className="sec2" id="chat">

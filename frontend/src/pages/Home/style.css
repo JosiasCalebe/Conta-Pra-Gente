@@ -41,12 +41,12 @@ section {
     color: #999;
 }
 
-/* ======= */
+/* Section 1 = Welcome */
 
-.sec1{
+.sec1 {
     flex-direction: column;
     width: 100%;
-    margin-bottom: 20vh; 
+    margin-bottom: 20vh;
     padding: 0 40px
 }
 
@@ -64,9 +64,7 @@ section {
     margin-right: auto;
 }
 
-.slogan,
-.subSlogan,
-.chatbtn {
+.slogan, .subSlogan, .chatbtn {
     margin-right: auto;
 }
 
@@ -98,7 +96,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     width: 100px;
     height: 100px;
     background: chartreuse;
@@ -148,38 +145,31 @@ section {
     .slogan {
         font-size: 45px;
     }
-
     .subSlogan {
         font-size: 28px;
     }
-
     .chatbtn .a {
         font-size: 40px;
     }
 }
 
 @media screen and (max-width: 1120px) {
-
     .sec1 {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     .boxContent {
         margin: 0;
     }
-
-    .imageBox{
+    .imageBox {
         display: none;
     }
-
     .slogan {
         margin: 0 0 0 0;
         text-align: center;
         font-size: 55px;
     }
-
     .subSlogan {
         margin: 10px 0 0 0;
         text-align: center;
@@ -191,15 +181,12 @@ section {
 }
 
 @media screen and (max-width: 700px) {
-
     .sec1 {
         padding: 0 40px
     }
-
     .slogan {
         font-size: 45px;
     }
-
     .subSlogan {
         font-size: 28px;
     }
@@ -212,7 +199,6 @@ section {
     .slogan {
         font-size: 40px;
     }
-
     .subSlogan {
         width: 100%;
         font-size: 26px;
@@ -229,9 +215,62 @@ section {
     }
 }
 
-/* ============== */
+/* Section 2 = About */
 
-.sec2,
+.secAbt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+
+    height: 50vh;
+    color: white;
+    background-image:linear-gradient(rgba(221, 221, 221, 0.7),rgba(187, 187, 187, 0.8)),  url("../../assets/LogoContaPraGente.png"); ;
+    background-size: 260px;
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin-top: 40px;
+    -webkit-clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 11%);
+    clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 11%);
+}
+
+.secAbt h1 {
+    color: var(--main-color);
+    font-size: 45px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.secAbt .abtBox h4 {
+    margin: 0 5rem;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #545454;
+    text-align: center;
+}
+
+.secAbt .abtBox h4 span {
+    color: var(--main-color);
+    font-size: 36px;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0
+    }
+    49% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+}
+
+/* .sec2,
 .sec4 {
     padding: 0 40px;
     height: 100vh;
@@ -257,9 +296,10 @@ section {
         margin: 0;
         text-align: center;
     }
-}
+} */
 
-/* ====== */
+/* Section 3 = Philosophy */
+
 .sec3 {
     padding: 0 40px;
     height: 100vh;
@@ -272,9 +312,7 @@ section {
     align-items: flex-end;
 }
 
-.sec3 h2,
-.sec3 .pCont
-{
+.sec3 h2, .sec3 .pCont {
     text-align: right;
     margin-left: auto;
 }
@@ -292,53 +330,46 @@ section {
         height: auto;
         margin: 20vh 0;
     }
-
-     .mural .muralCont {
+    .mural .muralCont {
         width: 100%;
     }
-
     .sec3 .cont {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 30px;
     }
-
     .sec3 .cont h2 {
         margin-left: 0;
     }
-
     .sec3 .cont .pCont {
         margin: 0;
         text-align: center;
     }
-
     .sec3 .cont .btn {
         margin: 15px 0 0 0;
     }
 }
 
 @media screen and (max-width: 900px) {
-     .mural .muralCont {
+    .mural .muralCont {
         flex-direction: column;
         text-align: center;
     }
-
-     .mural .muralCont .phrase {
+    .mural .muralCont .phrase {
         width: 100%;
     }
-
-     .mural .muralCont:last-child {
+    .mural .muralCont:last-child {
         margin-top: 40px;
         flex-flow: column;
     }
-
-     .mural .muralCont:last-child .phrase {
+    .mural .muralCont:last-child .phrase {
         text-align: center;
     }
 }
 
 /* ======= */
+
 .mural {
     width: 80%;
 }
@@ -350,66 +381,72 @@ section {
     width: 100%;
 }
 
-
 @import 'https://fonts.googleapis.com/css?family=Reenie+Beanie';
-
 .postit {
- line-height: 1;
- text-align:center;     
- width: 275px;    
- margin: 25px;    
- min-height:250px;
- max-height:250px;
- padding-top:10px;
- position:relative;   
- border:1px solid #E8E8E8; 
- border-bottom-right-radius: 60px 5px;
- display:flex;
- justify-content: center;
- align-items: center;    
-  background: #FFE052; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #FFE052 81%, #FFE052 82%, #FFE052 82%, #ffffc6 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#FFE052), color-stop(82%,#FFE052), color-stop(82%,#FFE052), color-stop(100%,#ffffc6)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg, #FFE052 81%,#FFE052 82%,#FFE052 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg, #FFE052 81%,#FFE052 82%,#FFE052 82%,#ffffc6 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg, #FFE052 81%,#FFE052 82%,#FFE052 82%,#ffffc6 100%); /* IE10+ */
-background: linear-gradient(135deg, #FFE052 81%,#FFE052 82%,#FFE052 82%,#ffffc6 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE052', endColorstr='#ffffc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    line-height: 1;
+    text-align: center;
+    width: 275px;
+    margin: 25px;
+    min-height: 250px;
+    max-height: 250px;
+    padding-top: 10px;
+    position: relative;
+    border: 1px solid #E8E8E8;
+    border-bottom-right-radius: 60px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFE052;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #FFE052 81%, #FFE052 82%, #FFE052 82%, #ffffc6 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(81%, #FFE052), color-stop(82%, #FFE052), color-stop(82%, #FFE052), color-stop(100%, #ffffc6));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #FFE052 81%, #FFE052 82%, #FFE052 82%, #ffffc6 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #FFE052 81%, #FFE052 82%, #FFE052 82%, #ffffc6 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #FFE052 81%, #FFE052 82%, #FFE052 82%, #ffffc6 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #FFE052 81%, #FFE052 82%, #FFE052 82%, #ffffc6 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE052', endColorstr='#ffffc6', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
 }
 
-.postit:after {     
-  content: "";
- position:absolute;
- z-index:-1;
- right:-0px; bottom:20px;
- width:200px;
- height: 25px;
- background: rgba(0, 0, 0, 0.2);
- box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
--moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
--webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
-     -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+.postit:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -0px;
+    bottom: 20px;
+    width: 200px;
+    height: 25px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 15px 5px rgba(0, 0, 0, 0.40);
+    -moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
     -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
-        transform: matrix(-1, -0.1, 0, 1, 0, 0);
-        
+    transform: matrix(-1, -0.1, 0, 1, 0, 0);
 }
 
 .rotate {
-           /* Safari */
-           -webkit-transform: rotate(-10deg);
-           /* Firefox */
-           -moz-transform: rotate(-10deg);
-           /* IE */
-           -ms-transform: rotate(-10deg);
-           /* Opera */
-           -o-transform: rotate(-10deg);
-           /* Internet Explorer */
-           filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=1);
-       }
+    /* Safari */
+    -webkit-transform: rotate(-10deg);
+    /* Firefox */
+    -moz-transform: rotate(-10deg);
+    /* IE */
+    -ms-transform: rotate(-10deg);
+    /* Opera */
+    -o-transform: rotate(-10deg);
+    /* Internet Explorer */
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
 
 .postit p {
-    font-family:'Reenie Beanie';    
-    font-size:3.5em; 
+    font-family: 'Reenie Beanie';
+    font-size: 3.5em;
     margin: auto 0;
     font-weight: bold;
 }
@@ -418,7 +455,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE052', end
     word-break: normal;
     height: 100%;
     width: 50%;
-    font-family:'Reenie Beanie'; 
+    font-family: 'Reenie Beanie';
     font-size: 2.1rem;
 }
 
@@ -430,14 +467,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE052', end
         height: auto;
         margin: 20vh 0;
     }
-
     .sec4 .cont {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 30px;
     }
-
     .sec4 .cont .pCont {
         margin: 0;
         text-align: center;
@@ -445,6 +480,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE052', end
 }
 
 /* ======= */
+
 .video {
     width: 50%;
     display: flex;
@@ -452,19 +488,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE052', end
     align-items: center;
 }
 
-.video img{
+.video img {
     width: 400px;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 550px) {
-    .video img{
+    .video img {
         width: 320px;
     }
 }
 
 /* ======= */
-
-
-
-
