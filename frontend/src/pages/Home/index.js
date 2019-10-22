@@ -39,8 +39,10 @@ export default function App() {
           </div>
         </div>
         <div class="box">
-          <span></span>
-          <span></span>
+          <a href="#mural">
+            <span></span>
+            <span></span>
+          </a>
         </div>
       </section>
       {/* <section className="sec2" id="chat">

@@ -104,6 +104,8 @@ section {
     background: chartreuse;
 }
 
+/* Arrow down style */
+
 .box {
     margin-top: 10px;
 }
@@ -125,6 +127,8 @@ section {
 .box span:nth-child(3) {
     animation-delay: -.4s;
 }
+
+/* Arrow Down animate */
 
 @keyframes animate {
     0% {
