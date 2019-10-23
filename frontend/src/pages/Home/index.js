@@ -21,8 +21,8 @@ import './style.css'
 export default function App() {
 
   const styleSVG = {
-    width: '550',
-    height: '400'
+    width: '600',
+    height: '95%'
   }
 
   return (
@@ -50,7 +50,7 @@ export default function App() {
         <div className="abtBox">
           <div className="abtCont">
             <div className="abtText">
-              <h3>Como surgiu a idéia?</h3>
+              <h3>Como surgiu a ideia?</h3>
               <p>A ideia originou-se no Ideathon organizado pelo Sesi, no projeto Jornada da Paz</p>
             </div>
             <div className="shadow"></div>
@@ -71,6 +71,9 @@ export default function App() {
           </div>
         </div>
       </section>
+      {/* <section className="secPhilo">
+        
+      </section> */}
       {/* <section className="sec2" id="chat">
         <div className="cont">
           <h2>Chat</h2>
