@@ -39,16 +39,36 @@ export default function App() {
           </div>
         </div>
         <div class="box">
-          <a href="/#mural">
+          <a href="/#about">
             <span></span>
             <span></span>
           </a>
         </div>
       </section>
       <section id="about" className="secAbt">
-        <h1>O que é o Conta Pra Gente?</h1>
+        <h1>Um pouco sobre nós...</h1>
         <div className="abtBox">
-          <h4>Somos uma plataforma que tem como objetivo levar conforto àqueles que estão em conflito, seja com  os outros ou consigo mesmo<span className="abtDot">.</span></h4>
+          <div className="abtCont">
+            <div className="abtText">
+              <h3>Como surgiu a idéia?</h3>
+              <p>A ideia originou-se no Ideathon organizado pelo Sesi, no projeto Jornada da Paz</p>
+            </div>
+            <div className="shadow"></div>
+          </div>
+          <div className="abtCont">
+            <div className="abtText">
+              <h3>O que é o Conta Pra Gente?</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quod non facere iure nisi, excepturi quia dolore voluptatibus, consequatur reiciendis suscipit atque dolores hic nulla recusandae quaerat libero. Sit, nobis? lo</p>
+            </div>
+            <div className="shadow"></div>
+          </div>
+          <div className="abtCont">
+            <div className="abtText">
+              <h3>Qual é o objetivo da plataforma?</h3>
+              <p>Lorem ipsum dolor sit amet consecsequatur reiciendis suscipit atque dolores hic nulla recusandae quaerat libero. Sit, nobis? lo</p>
+            </div>
+            <div className="shadow"></div>
+          </div>
         </div>
       </section>
       {/* <section className="sec2" id="chat">
