@@ -127,6 +127,12 @@ nav {
   body {
     overflow-x: hidden;
   }
+  .navBar {
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+  }
+
   .centerNavItens {
     margin-top: 0;
     position: absolute;
@@ -140,6 +146,7 @@ nav {
     transform: translateX(100%);
     z-index: 9;
     transition: transform 0.5s ease-in;
+    display: none;
   }
 
   .centerNavItens ul {
@@ -147,6 +154,7 @@ nav {
     align-items: center;
     justify-content: center;
     margin: auto 0;
+    height: 100%;
   }
 
   .centerNavItens li{
@@ -163,5 +171,6 @@ nav {
 
   .centerNavItens.nav-active {
     transform: translateX(0%);
+    display: block;
   }
 }
