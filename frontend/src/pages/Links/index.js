@@ -15,7 +15,7 @@ export default function App() {
             <Header />
             <section className="link-main-sec">
                 <div class="link-title">
-                    <h3>Links Úteis</h3>
+                    <h2>Links Úteis</h2>
                     <h4>Para conhecer mais sobre voluntariado, apoio emocional, prevenção do suicídio, saúde mental e outros temas afins, acesse também:</h4>
                 </div>
                 <div class="link-content">
