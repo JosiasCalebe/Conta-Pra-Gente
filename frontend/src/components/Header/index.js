@@ -29,9 +29,9 @@ class Header extends Component {
                         <li className="pages">
                             <a className="a" href="/#about" onClick={() => this.setState({ active: !this.state.active })}> Sobre nós </a>
                         </li>
-                        <li className="pages">
+                        {/* <li className="pages">
                             <a className="a" href="/#philo" onClick={() => this.setState({ active: !this.state.active })}> Filosofia </a>
-                        </li>
+                        </li> */}
                         {/* <li className="pages">
                             <a className="a" href="/#chat" onClick={() => this.setState({ active: !this.state.active })}> Chat </a>
                         </li> */}
@@ -40,6 +40,9 @@ class Header extends Component {
                         </li>
                         <li className="pages">
                             <a className="a" href="/#videos" onClick={() => this.setState({ active: !this.state.active })}> Vídeos </a>
+                        </li>
+                        <li>
+                            <Link class="a" to="/links" onClick={() => this.setState({ active: !this.state.active })} > Links </Link>
                         </li>
                         {/* <li>
                             <a className="a" href="/login" onClick={() => this.setState({ active: !this.state.active })}> Login </Link>
