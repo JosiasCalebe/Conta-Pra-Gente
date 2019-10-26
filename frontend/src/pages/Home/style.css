@@ -222,6 +222,8 @@ section {
     margin-bottom: 40px;
 }
 
+
+
 .secAbt h1 {
     color: var(--main-color);
     font-size: 60px;
@@ -257,6 +259,7 @@ section {
     font-size: 40px;
     color: var(--main-color);
     padding: 0 20px;
+    line-height: 40px;
 }
 
 .abtBox .abtCont p {
@@ -291,6 +294,51 @@ section {
     }
     50% {
         opacity: 1
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .secAbt h1 {
+        font-size: 45px;
+    }
+
+    .abtBox .abtCont h3 {
+        font-size: 35px;
+    }   
+
+    .abtBox .abtCont p {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .secAbt h1 {
+        font-size: 40px;
+    }
+
+    .abtBox .abtCont h3 {
+        font-size: 33px;
+    }   
+
+    .abtBox .abtCont p {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .secAbt h1 {
+        font-size: 38px;
+        line-height: 35px;
+    }
+
+    .abtBox .abtCont h3 {
+        font-size: 31px;
+        line-height: 30px;
+    }   
+
+    .abtBox .abtCont p {
+        font-size: 19px;
     }
 }
 
