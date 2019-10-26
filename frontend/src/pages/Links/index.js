@@ -6,6 +6,9 @@ import './style.css';
 // Header
 import Header from '../../components/Header/index';
 
+// Footer
+import Footer from '../../components/Footer/index';
+
 export default function App() {
     return (
         <div className="container">
@@ -90,6 +93,7 @@ export default function App() {
                     </div>                  
                 </div>
             </section>
+            <Footer/>
         </div >
     );
 }
