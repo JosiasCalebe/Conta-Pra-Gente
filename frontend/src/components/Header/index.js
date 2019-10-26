@@ -41,8 +41,8 @@ class Header extends Component {
                         <li className="pages">
                             <a className="a" href="/#videos" onClick={() => this.setState({ active: !this.state.active })}> Vídeos </a>
                         </li>
-                        <li>
-                            <Link class="a" to="/links" onClick={() => this.setState({ active: !this.state.active })} > Links </Link>
+                        <li className="pages">
+                            <Link className="a" to="/links" onClick={() => this.setState({ active: !this.state.active })} > Links </Link>
                         </li>
                         {/* <li>
                             <a className="a" href="/login" onClick={() => this.setState({ active: !this.state.active })}> Login </Link>
