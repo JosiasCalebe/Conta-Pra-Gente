@@ -60,4 +60,9 @@
     color: #059;
 }
 
-
+@media screen and (max-width: 1125px) {
+    .link-main-sec .link-title,
+    .link-main-sec .link-content {
+        width: 95%;
+    }
+}
