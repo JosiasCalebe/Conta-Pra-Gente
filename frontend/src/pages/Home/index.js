@@ -12,6 +12,8 @@ import Footer from '../../components/Footer/index';
 // Imagens
 import SecImage from '../../components/SVG/svgHome';
 import YouTubeLogo from '../../components/SVG/youtube.png';
+import JornadaPazLogo from '../../assets/LogoJornadaPazNasEscolas.png';
+import ContaPraGenteTeam from '../../assets/ContaPraGenteTeam.jpg';
 
 import { Link } from 'react-router-dom';
 
@@ -51,7 +53,7 @@ export default function App() {
           <div className="abtCont">
             <div className="abtText">
               <h3>Como surgiu a ideia?</h3>
-              <p>A ideia originou-se no Ideathon organizado pelo Sesi, no projeto Jornada da Paz</p>
+              <p>A ideia originou-se no Ideathon organizado pelo Sesi, no projeto Jornada da Paz <br /> <button className="btn"><a href="/#idea">Saiba mais</a></button></p>
             </div>
             <div className="shadow"></div>
           </div>
@@ -69,6 +71,19 @@ export default function App() {
             </div>
             <div className="shadow"></div>
           </div>
+        </div>
+      </section>
+
+      <section id="idea" className="secIdea">
+        <h2 className="secIdeaTitle">O surgimento da ideia</h2>
+        <div className="ideaCont row1">
+          {/* <p>Com o objetivo de promover a paz no ambiente escolar, foi realizado a Jornada paz nas escolas, no dia 03/09 de 2019, na Fiesp, a fim de incrementar o diálogo entre os diferentes públicos da rede Sesi. Emtre as palestras, cine debate e o depoimento de personalidades, houve o desafios de ideias chamado Ideathon com os alunos do SESI Campinas e SESI Ipirangaque tinha como objetivo propor uma ideia para o combate ao bullying.</p> */}
+          <p>Uma das atividades da Jornada paz nas escolas foi o Ideathon, maratona de ideias que reuniu 60 alunos e professores das unidades do Sesi-SP de Campinas e do bairro do Ipiranga, na capital. A proposta do concurso foi desenvolver projetos de comunicação e mobilização pela paz nas escolas tendo como tema o combate ao bullying.</p>
+          <img src={JornadaPazLogo} alt="Logo Jornada Paz nas escolas"/>
+        </div>
+        <div className="ideaCont row2">
+          <p>O grupo Conta pra gente – composto por cinco alunos, três da unidade Ipiranga e dois do Sesi Campinas (Amoreiras) mais um professor – foi o grande vencedor e garantiu como prêmio uma viagem ao Rio de Janeiro para participar de uma Oficina Geração Futura, na sede do Canal Futura. Mais do que isso, os vencedores terão a missão de colocar em prática o projeto concebido.</p>
+          <img src={ContaPraGenteTeam} alt=""/>
         </div>
       </section>
       {/* <section className="secPhilo">

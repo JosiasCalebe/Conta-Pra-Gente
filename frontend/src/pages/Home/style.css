@@ -271,6 +271,13 @@ section {
     text-align: left;
 }
 
+.abtText .btn a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFF;
+}
+
 .shadow {
     visibility: inherit;
     opacity: 1;
@@ -340,6 +347,51 @@ section {
     .abtBox .abtCont p {
         font-size: 19px;
     }
+}
+
+/* =============== */
+
+.secIdea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 30px;
+    margin-bottom: 3rem;
+}
+
+.secIdea .ideaCont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 0 20px;
+}
+
+.secIdea .ideaCont.row1 {
+    margin-bottom: 3rem;
+}
+
+.secIdea .ideaCont p {
+    font-weight: bold;
+    color: #999;
+    font-size: 1.4rem;
+    width: 40rem;
+    padding: 0.3rem;
+}
+
+.secIdea .ideaCont img {
+    width: 28rem;
+}
+
+.secIdea .ideaCont.row2 {
+    flex-flow: row-reverse;
+}
+
+.secIdea .ideaCont.row2 p {
+    text-align: right;
 }
 
 /* .sec2,
