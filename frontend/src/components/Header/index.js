@@ -36,10 +36,10 @@ class Header extends Component {
                             <a className="a" href="/#chat" onClick={() => this.setState({ active: !this.state.active })}> Chat </a>
                         </li> */}
                         <li className="pages">
-                            <a className="a" href="/#mural" onClick={() => this.setState({ active: !this.state.active })}> Mural </a>
+                            <a className="a" href="http://www.robonaticos111.wixsite.com/conta-pra-gente" onClick={() => this.setState({ active: !this.state.active })}> Mural </a>
                         </li>
                         <li className="pages">
-                            <a className="a" href="/#videos" onClick={() => this.setState({ active: !this.state.active })}> Vídeos </a>
+                            <a className="a" href="http://www.robonaticos111.wixsite.com/conta-pra-gente" onClick={() => this.setState({ active: !this.state.active })}> Vídeos </a>
                         </li>
                         <li className="pages">
                             <Link className="a" to="/links" onClick={() => this.setState({ active: !this.state.active })} > Links </Link>
