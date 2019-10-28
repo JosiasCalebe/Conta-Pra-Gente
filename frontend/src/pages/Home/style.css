@@ -382,6 +382,10 @@ section {
     text-align: justify;
 }
 
+.secIdea .ideaCont p span {
+    color: var(--main-color);
+}
+
 .secIdea .ideaCont img {
     width: 28rem;
 }

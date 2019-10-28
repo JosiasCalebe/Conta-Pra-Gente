@@ -82,7 +82,7 @@ export default function App() {
           <img src={JornadaPazLogo} alt="Logo Jornada Paz nas escolas"/>
         </div>
         <div className="ideaCont row2">
-          <p>O grupo Conta pra gente – composto por cinco alunos, três da unidade Ipiranga e dois do Sesi Campinas (Amoreiras) mais um professor – foi o grande vencedor e garantiu como prêmio uma viagem ao Rio de Janeiro para participar de uma Oficina Geração Futura, na sede do Canal Futura. Mais do que isso, os vencedores terão a missão de colocar em prática o projeto concebido.</p>
+          <p>O grupo <span>Conta pra gente</span> – composto por cinco alunos, três da unidade Ipiranga e dois do Sesi Campinas (Amoreiras) – foi o grande vencedor e garantiu como prêmio uma viagem ao Rio de Janeiro onde participaram de uma Oficina Geração Futura, na sede do Canal Futura. Mais do que isso, os vencedores tem a missão de colocar em prática o projeto concebido.</p>
           <img src={ContaPraGenteTeam} alt=""/>
         </div>
       </section>
