@@ -75,7 +75,7 @@ export default function App() {
       </section>
 
       <section id="idea" className="secIdea">
-        <h2 className="secIdeaTitle">O surgimento da ideia</h2>
+        <h2 className="ideaTitle">O surgimento da ideia</h2>
         <div className="ideaCont row1">
           {/* <p>Com o objetivo de promover a paz no ambiente escolar, foi realizado a Jornada paz nas escolas, no dia 03/09 de 2019, na Fiesp, a fim de incrementar o diálogo entre os diferentes públicos da rede Sesi. Emtre as palestras, cine debate e o depoimento de personalidades, houve o desafios de ideias chamado Ideathon com os alunos do SESI Campinas e SESI Ipirangaque tinha como objetivo propor uma ideia para o combate ao bullying.</p> */}
           <p>Uma das atividades da Jornada paz nas escolas foi o Ideathon, maratona de ideias que reuniu 60 alunos e professores das unidades do Sesi-SP de Campinas e do bairro do Ipiranga, na capital. A proposta do concurso foi desenvolver projetos de comunicação e mobilização pela paz nas escolas tendo como tema o combate ao bullying.</p>
