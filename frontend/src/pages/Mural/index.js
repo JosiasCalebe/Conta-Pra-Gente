@@ -3,6 +3,11 @@ import React, { useState } from 'react';
 // Header
 import Header from '../../components/Header/index';
 
+// Footer
+import Footer from '../../components/Footer/index';
+
+import { Link } from 'react-router-dom';
+
 import './style.css';
 import '../Home/style.css';
 
@@ -14,24 +19,31 @@ export default function App() {
                 <h2>Mural</h2>
                 <div className="mural">
                     <div className="muralCont">
-                        <div className="postit"><p>Tati Bernardi</p></div>
-                        <div className="phrase">Aquele abraço era o lado bom da vida, mas para valorizá-lo eu precisava viver. E que irônico: pra viver eu precisava perdê-lo...</div>
-                    </div>
-                    <div className="muralCont">
                         <div className="postit"><p>Chorão</p></div>
-                        <div className="phrase">Não menospreze o dever que a consciência te impõe, valorize a vida!</div>
+                        <div className="phrase">"Ser forte é ter coragem pra continuar. Ter força é ter força pra se superar."</div>
                     </div>
                     <div className="muralCont">
-                        <div className="postit"><p>Alessandro Ferraro</p></div>
-                        <div className="phrase">Saber valorizar cada momento da vida ao lado de um alguém especial é poder cativar cada vez mais o sentimento que um sente pelo outro...</div>
+                        <div className="postit"><p>Mahatma Gandhi</p></div>
+                        <div className="phrase">"Nas grandes batalhas da vida, o primeiro passo para a vitória é o desejo de vencer."</div>
                     </div>
                     <div className="muralCont">
-                        <div className="postit"><p>Vanessa Pimentel</p></div>
-                        <div className="phrase">A vida me ensinou que a melhor parte é aquela que você aprende a se valorizar.</div>
+                        <div className="postit"><p>Martin Luther King</p></div>
+                        <div className="phrase">"Suba o primeiro degrau com fé. Não é necessário que você veja toda a escada. Apenas dê o primeiro passo."</div>
+                    </div>
+                </div>
+                <div className="temas-container">
+                    <div className="temas-h4">
+                        <h4>Saiba mais sobre:</h4>
+                    </div>
+                    <div className="temas-btn-container">
+                        <button className="btn"><Link className="a" to="/mural/depressao">Depressão</Link></button>
+                        <button className="btn"><Link className="a" to="/mural/panico">Síndrome do Pânico</Link></button>
+                        <button className="btn"><Link className="a" to="/mural/estresse">Estresse</Link></button>
+                        <button className="btn"><Link className="a" to="/mural/bullying">Bullying</Link></button>
                     </div>
                 </div>
             </section>
-
+            <Footer />
         </div >
     );
 }

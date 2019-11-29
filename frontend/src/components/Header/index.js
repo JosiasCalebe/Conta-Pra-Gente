@@ -29,24 +29,15 @@ class Header extends Component {
                         <li className="pages">
                             <a className="a" href="/#about" onClick={() => this.setState({ active: !this.state.active })}> Sobre nós </a>
                         </li>
-                        {/* <li className="pages">
-                            <a className="a" href="/#philo" onClick={() => this.setState({ active: !this.state.active })}> Filosofia </a>
-                        </li> */}
-                        {/* <li className="pages">
-                            <a className="a" href="/#chat" onClick={() => this.setState({ active: !this.state.active })}> Chat </a>
-                        </li> */}
                         <li className="pages">
-                            <a className="a" href="http://www.robonaticos111.wixsite.com/conta-pra-gente" onClick={() => this.setState({ active: !this.state.active })}> Mural </a>
+                            <Link className="a" to="/mural" onClick={() => this.setState({ active: !this.state.active })}> Mural </Link>
                         </li>
                         <li className="pages">
-                            <a className="a" href="http://www.robonaticos111.wixsite.com/conta-pra-gente" onClick={() => this.setState({ active: !this.state.active })}> Vídeos </a>
+                            <Link className="a" to="/videos" onClick={() => this.setState({ active: !this.state.active })}> Vídeos </Link>
                         </li>
                         <li className="pages">
                             <Link className="a" to="/links" onClick={() => this.setState({ active: !this.state.active })} > Links </Link>
                         </li>
-                        {/* <li>
-                            <a className="a" href="/login" onClick={() => this.setState({ active: !this.state.active })}> Login </Link>
-                        </li> */}
                     </ul>
                 </div>
             </nav>

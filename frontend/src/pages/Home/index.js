@@ -3,9 +3,6 @@ import React from 'react';
 // Header
 import Header from '../../components/Header/index';
 
-// ChatModal
-import Chat from '../../components/ChatModal/index';
-
 // Footer
 import Footer from '../../components/Footer/index';
 
@@ -60,14 +57,14 @@ export default function App() {
           <div className="abtCont">
             <div className="abtText">
               <h3>O que é o Conta Pra Gente?</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quod non facere iure nisi, excepturi quia dolore voluptatibus, consequatur reiciendis suscipit atque dolores hic nulla recusandae quaerat libero. Sit, nobis? lo</p>
+              <p>Conta Pra Gente é uma plataforma com o objetivo geral de levar conforto, conhecimento e apoio para aqueles que estão em conflito, seja com os outros ou consigo mesmo.</p>
             </div>
             <div className="shadow"></div>
           </div>
           <div className="abtCont">
             <div className="abtText">
               <h3>Qual é o objetivo da plataforma?</h3>
-              <p>Lorem ipsum dolor sit amet consecsequatur reiciendis suscipit atque dolores hic nulla recusandae quaerat libero. Sit, nobis? lo</p>
+              <p>Queremos que adolescentes sintam-se ouvidos e abraçados. Uma comunicação que ocorre de jovem para jovem, trazendo conforto no momento do desabafo.</p>
             </div>
             <div className="shadow"></div>
           </div>
@@ -75,30 +72,16 @@ export default function App() {
       </section>
 
       <section id="idea" className="secIdea">
-        <h2 className="ideaTitle">O surgimento da ideia</h2>
+        <h2 className="ideaTitle">Surgimento da ideia</h2>
         <div className="ideaCont row1">
-          {/* <p>Com o objetivo de promover a paz no ambiente escolar, foi realizado a Jornada paz nas escolas, no dia 03/09 de 2019, na Fiesp, a fim de incrementar o diálogo entre os diferentes públicos da rede Sesi. Emtre as palestras, cine debate e o depoimento de personalidades, houve o desafios de ideias chamado Ideathon com os alunos do SESI Campinas e SESI Ipirangaque tinha como objetivo propor uma ideia para o combate ao bullying.</p> */}
           <p>Uma das atividades da Jornada paz nas escolas foi o Ideathon, maratona de ideias que reuniu 60 alunos e professores das unidades do Sesi-SP de Campinas e do bairro do Ipiranga, na capital. A proposta do concurso foi desenvolver projetos de comunicação e mobilização pela paz nas escolas tendo como tema o combate ao bullying.</p>
-          <img src={JornadaPazLogo} alt="Logo Jornada Paz nas escolas"/>
+          <img src={JornadaPazLogo} alt="Logo Jornada Paz nas Escolas"/>
         </div>
         <div className="ideaCont row2">
           <p>O grupo <span>Conta pra gente</span> – composto por cinco alunos, três da unidade Ipiranga e dois do Sesi Campinas (Amoreiras) – foi o grande vencedor e garantiu como prêmio uma viagem ao Rio de Janeiro onde participaram de uma Oficina Geração Futura, na sede do Canal Futura. Mais do que isso, os vencedores tem a missão de colocar em prática o projeto concebido.</p>
-          <img src={ContaPraGenteTeam} alt=""/>
+          <img src={ContaPraGenteTeam} alt="Premiação Jornada Paz nas Escolas"/>
         </div>
       </section>
-      {/* <section className="secPhilo">
-        
-      </section> */}
-      {/* <section className="sec2" id="chat">
-        <div className="cont">
-          <h2>Chat</h2>
-          <div className="pCont">
-            O Chat junta jovens para conversarem e se ajudarem
-          </div>
-          <button className="btn"><a className="a" href="http://www.robonaticos111.wixsite.com/conta-pra-gente">Entre no Chat</a></button>
-        </div>
-        <Chat />
-      </section> */}
       <section id="mural" className="sec3">
         <div className="mural">
           <div className="muralCont">
@@ -115,7 +98,7 @@ export default function App() {
           <div className="pCont">
             O Mural tem depoimentos e frases motivacionais
           </div>
-          <button className="btn"><a className="a" href="http://www.robonaticos111.wixsite.com/conta-pra-gente">Acesse o Mural</a></button>
+          <button className="btn"><Link className="a" to="/mural">Acesse o Mural</Link></button>
         </div>
       </section>
       <section id="videos" className="sec4">
@@ -124,7 +107,7 @@ export default function App() {
           <div className="pCont">
             Os Vídeos falaram sobre assuntos cotidianos
           </div>
-          <button className="btn"><a className="a" href="http://www.robonaticos111.wixsite.com/conta-pra-gente">Veja os Vídeos</a></button>
+          <button className="btn"><Link className="a" to="/videos">Veja os Vídeos</Link></button>
         </div>
         <div className="video">
           <img src={YouTubeLogo} alt="Logo do Youtube" />

@@ -4,6 +4,9 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+
+.link-main-sec, .muralSec, .secVid {
     padding: 40px 20px;
 }
 
@@ -61,8 +64,7 @@
 }
 
 @media screen and (max-width: 1125px) {
-    .link-main-sec .link-title,
-    .link-main-sec .link-content {
+    .link-main-sec .link-title, .link-main-sec .link-content {
         width: 95%;
     }
 }
