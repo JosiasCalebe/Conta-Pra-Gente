@@ -1,0 +1,58 @@
+.sub-section {
+    padding: 10px 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-content {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-container {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sub-h3,
+.sub-p,
+.sub-span,
+.sub-ul li {
+    text-align: justify;
+}
+
+.sub-h3 {
+    color: #777;
+    font-size: 26px;
+    margin-bottom: 3px;
+}
+
+.sub-p,
+.sub-span,
+.sub-ul li {
+    font-size: 16px;
+}
+
+.sub-p {
+    color: #333;
+}
+
+.sub-span {
+    color: #000;
+    font-weight: bold;
+}
+
+.sub-ul {
+    margin-left: 40px;
+}
+
+.sub-ul .sub-span {
+    margin-left: -20px;
+}
